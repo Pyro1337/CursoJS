@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora Javascript</h1>
+    <h2>Ivan Sanchez</h2>
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly>
+        <br>
+        <input type="button" value="1"onclick="accionarBoton('1')">
+        <input type="button" value="2"onclick="accionarBoton('2')">
+        <input type="button" value="3"onclick="accionarBoton('3')">
+        <input type="button" value="+"onclick="accionarBoton('+')">
+        <br>
+        <input type="button" value="4"onclick="accionarBoton('4')">
+        <input type="button" value="5"onclick="accionarBoton('5')">
+        <input type="button" value="6"onclick="accionarBoton('6')">
+        <input type="button" value="-"onclick="accionarBoton('-')">
+        <br>
+        <input type="button" value="7"onclick="accionarBoton('7')">
+        <input type="button" value="8"onclick="accionarBoton('8')">
+        <input type="button" value="9"onclick="accionarBoton('9')">
+        <input type="button" value="*"onclick="accionarBoton('*')">
+        <br>
+        <input type="button" value="0"onclick="accionarBoton('0')">
+        <input type="button" value="."onclick="accionarBoton('.')">
+        <input type="button" value="/"onclick="accionarBoton('/')">
+        <input type="button" value="="onclick="calcular()">
+        <br>
+        <input type="button" value="C"onclick="limpiarPantalla()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

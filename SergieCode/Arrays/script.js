@@ -91,3 +91,69 @@ console.log(Math.max(1,2,3,4,5,6,7,8,9,10));//trae el maximo
 console.log(Math.random());//trae numero random
 console.log(Math.round(3.2)); //trae el numero redondeado en este caso 3
 console.log(Math.round(3.7)); //trae el numero redondeado en este caso 4
+
+console.log("Aqui inicia el repaso de Bucles");
+let vectores = ['Java','CSS','Jscript','C#'];
+for (let index = 0 ; index < vectores.length; index++){
+    console.log(vectores[index]);
+}
+
+var vector2 = [1,2,3,4,5,6,7,8,9,10];
+let contador = 0;
+while(contador <= 10){
+    console.log(vector2[contador]);
+    contador++
+}
+
+let objetoPrueba ={
+    nombre : "Ivan",
+    edad : 27,
+    estado : "Casado",
+    hijos : 2,
+    lenguajes : ["HTML","CSS","Javascript","Java","Python"]
+
+}
+for (let elemento in objetoPrueba)  {
+    console.log(elemento);
+}
+
+//Sets Y Maps
+
+//SET
+/*Un set es una coleccion de elementos de tipo especial
+Que no posee claves, donde cada valor puede aparecer una sola vez. 
+Sus principales métodos son:
+new Set([iterable]) – crea el set. El argumento opcional es un objeto iterable (generalmente un array) con los valores para inicializarlo.
+set.add(valor) – agrega un valor, y devuelve el set en sí.
+set.delete(valor) – elimina el valor, y devuelve true si el valor existía al momento de la llamada; si no, devuelve false.
+set.has(valor) – devuelve true si el valor existe en el set, si no, devuelve false.
+set.clear() – elimina todo el continido del set.
+set.size – es la cantidad de elementos*/
+
+let sett = new Set(['Pedro','Ricardo','Pedro', 'Irving','Jose','Pedro']);
+sett.add('Sergio','Ricardo');
+console.log(sett);
+
+//Map
+/*Map es, al igual que Objet, una colección de datos identificados por claves. 
+La principal diferencia es que Map permite claves de cualquier tipo.
+
+Los métodos y propiedades son:
+new Map() – crea el mapa.
+map.set(clave, valor)) – almacena el valor asociado a la clave.
+map.get(clave) – devuelve el valor de la clave. Será undefined si la clave no existe en map.
+map.has(clave) – devuelve true si la clave existe en map, false si no existe.
+map.delete(clave) – elimina el elemento con esa clave.
+map.clear() – elimina todo de map.
+map.size – tamaño, devuelve la cantidad actual de elementos. */
+
+//Se declara de esta forma
+let mapa = new Map();
+//se mapea clave,valor
+mapa.set('1','String');
+mapa.set(1, 'number1');
+mapa.set(true, 'boolean');
+//se obtiene como un objeto mediante get.
+console.log(mapa.get(1));
+console.log(mapa.get('1'));
+console.log(mapa.get(true));

@@ -34,7 +34,7 @@ async function consumirAPI() {
     //Utilizamos try para tratar de consumir la api y catchearla en caso de errores.
     try{
         //Realizamos la solicitud mediante fetch
-        const response = await fetch(`${API_URL}users`);
+        const response = await fetch(`${API_URL}users`); 
 
         //Validamos que la respuesta este OK 
         if(!response.ok){
